@@ -36,7 +36,7 @@ main {
 header h1 {
   font-weight: bold;
   font-size: 4em;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   margin: 0;
   padding-left: 0.5em;
   font-style: italic;
@@ -54,46 +54,85 @@ header h1 {
   padding: 1em 0 1em 1em;
 }
 
-h2 {
-  color: var(--tertiary-color);
-  font-weight: bolder; 
+.nav div :hover {
+  background-color: #1b98ca;
 }
 
-.leftPanel {
-  width: 17%;
-  height:auto; 
+h2 {
+  color: var(--quinary-color);
+  font-weight: bolder;
+  text-decoration: underline; 
+}
+
+.nav h2 {
+  text-decoration: none;
+  padding: 0.3em;
+  border-radius: 50%;
+}
+
+article {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .sectionTitles {
-  padding: 0.5em;
-  margin-top: 5em;
+  width: 35%;
+  height:auto; 
+  padding: 6em 0.5em;
+  margin: 0 0 0 0.5em;
+  border-right: 0.2em solid var(--quinary-color); 
 }
 
-#aboutMeDiv {
-  height:10em;
+.sectionTitles :hover {
+  background-color: var(--quaternary-color);
 }
 
-.centerPanel {  
-  width: 60%; 
+
+/* .centerPanel {  
+  width: 75%; 
   height: auto;  
   justify-content: center;
   display: flex;  
   flex-wrap: wrap;
-  align-items: flex-start;
-}
+  align-items: flex-start;  
+} */
 
 .panelCard {
   background-color: var(--quaternary-color);
   line-height: 2em;
   font-size: 1em;
   margin: 4em 1em 1em 1em;  
-  padding: 1.3em; 
+  padding: 1.3em;
+  width: 100%;
 }
 
-.rightPanel {
-  width: 17%;
-  height: auto;
+/* #emptyPanel {
+  line-height: 2em;
+  font-size: 1em;
+  margin: 4em 1em 1em 1em;  
+  padding: 1.3em;
+  width: 100%;
+  opacity: 0% 
+} */
+
+article div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+
+#steveImage {
+  background-image: url(../images/steve-image.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  width: 162px;
+  margin: 5em 5em;
+  padding: 0;
+  border: solid 0.3em var(--quinary-color);
+  height: 227px; 
+}
+
+/* background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color)); */
 
 footer {
   color: var(--tertiary-color);
