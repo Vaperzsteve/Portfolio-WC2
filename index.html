@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <title>Steve Robertson - Project Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
+    <!-- start of header -->
     <header>
         <section class="banner">
             <h1>Steve Robertson</h1>
@@ -35,54 +38,101 @@
             </div>
         </section>
     </header>
+    <!-- end of header -->
+    <!-- start of main -->
     <main>
         <section>
             <article id="imageArticle">
                 <div>
                     <div id="steveImage">
                     </div>
+                    <h3>If you define the problem correctly,<br />you almost have the solution<br />&nbsp;&nbsp;&nbsp;-
+                        Steve Jobs</h3>
                 </div>
             </article>
             <article>
                 <div class="sectionTitles" id="aboutMeDiv">
                     <h2>About Me</h2>
                 </div>
-                <div class="panelCard">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                        porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                        non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
-                        enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-                        aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
-                        velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-                        pariatur?"</p>
+                <div class="panelCard" id="description">
+                    <p>Hey there! I'm Steve Robertson, a full-stack developer with a primary focus on UX/UI.
+                        After operating a small business in the retail industry for several years, the urge to alter my
+                        course in life and immerse myself into tech grew too powerful to ignore.
+                        In June 2021, I left the freedom and stability I had known previously to now focus on sharpening
+                        and maturing my programming skills.
+                        My passion for problem solving and thinking outside the box is unmatched. Every day I wake up
+                        excited to collaborate, design and code. I love every aspect of bringing a concept to completion
+                        and find each new solution rewarding.<br />
+                        <br />Front-End<br />
+                        JavaScript • ReactJS • jQuery • HTML5 • CSS3<br /><br />
+                        Back-End<br />
+                        NodeJS • Express • MongoDB • C# • ASP.NET
+                    </p>
                 </div>
             </article>
             <article>
                 <div class="sectionTitles" id="myProjectsDiv">
                     <h2>My Projects</h2>
                 </div>
-                <div class="panelCard">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque</p>
+                <div class="panelCard" id="projects">
+                    <div class="projectNames">
+                        <a href="#0" target="_blank"><img src="./assets/images/chip-laser-612x612.jpeg" alt="computer chip on a blue background" />
+                            <div class="headings">
+                                <h3>Surf Report</h3>
+                                <h4>MERN Stack</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projectNames">
+                        <a href="#0" target="_blank"><img src="./assets/images/iphone-background-612x612.jpeg" alt="cell phone on a white background" />
+                            <div class="headings">
+                                <h3>LED Wall</h3>
+                                <h4>Node / IoT</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projectNames">
+                        <a href="#0" target="_blank"><img src="./assets/images/lock-background-612x612.jpeg" alt="pad lock on a blue background" />
+                            <div class="headings">
+                                <h3>Calculator</h3>
+                                <h4>React / JavaScript / CSS</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projectNames">
+                        <a href="#0" target="_blank"><img src="./assets/images/simulator_background-612x612.jpeg" alt="teleporter with various graphs on the left and right sides" />
+                            <div class="headings">
+                                <h3>Pastel Puzzles</h3>
+                                <h4>MERN Stack</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projectNames">
+                        <a href="https://vaperzsteve.github.io/run-buddy/" target="_blank"><img src="./assets/images/run-buddy.png" alt="run buddy start building habits" />
+                            <div class="headings">
+                                <h3>Run Buddy</h3>
+                                <h4>HTML / CSS</h4>
+                            </div>
+                        </a>                   
+                    </div>
                 </div>
             </article>
         </section>
     </main>
+    <!-- end of main -->
+    <!-- start of footer -->
     <footer>
         <section class="footerSection">
             <article>
                 <div id="contactMeDiv" class="sectionTitles">
                     <h2>Contact Me</h2>
                 </div>
-                <div>           
+                <div id="contactTypes">
                     <div class="contactDiv">
                         <span id="cellPhoneIcon"></span>
-                        <a href="tel:512-779-6522" class="contactLink"><h2>5127796522</h2></a>
+                        <a href="tel:512-779-6522" class="contactLink">
+                            <h2>5127796522</h2>
+                        </a>
                     </div>
                     <div class="contactDiv">
                         <span id="emailIcon"></span>
@@ -103,9 +153,10 @@
                             <h2>LinkedIn</h2>
                         </a>
                     </div>
-                </div> 
+                </div>
             </article>
         </section>
     </footer>
+    <!-- end of footer -->
 </body>
 </html>
