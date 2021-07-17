@@ -193,17 +193,10 @@ h3 {
   width: 60%
 }
 
- /* #contactMeDiv {
-  border-right: 0.2em solid var(--quinary-color); 
-  padding-top: 6em;
-  padding-left: 5em;
-  padding-right: 5em;
-}  */
-
 .contactLink {
-  font-size: 0.75em; 
+  font-size: 0.5em; 
   padding: 7.5em 2em 7em 2em;
-  margin-top: 0.8em;
+  margin-top: 6em;
 }
 
 .contactLink :hover {
@@ -220,7 +213,7 @@ h3 {
   background-size: contain;
   background-position: center;
   padding-left: 1em;
-  margin-left: 2em;  
+  
 }
 
  #emailIcon {
@@ -229,7 +222,7 @@ h3 {
   background-size: contain;
   background-position: center;
   padding-left: 1.5em;
-  margin-left: 2em;  
+  margin-left: 0.6em;  
 }
 
 #gitHubIcon {
@@ -238,7 +231,7 @@ h3 {
   background-size: contain;
   background-position: center;
   padding-left: 2.5em;
-  margin-left: 2em;  
+  margin-left: 0.3em;  
 }
 
 #linkedInIcon {
@@ -247,39 +240,13 @@ h3 {
   background-size: contain;
   background-position: center;
   padding-left: 1.4em;
-  margin-left: 2em;  
+  margin-left: 0.6em;  
 } 
 /* end of contact me icons */
-  
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-  /* header text a new color for every breakpoint
-  reduce font size - em
-  changing widths
-  */ 
-}
-  
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
 
-}
-  
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
-  .contactLink {
-    font-size: 0.5em; 
-    /* padding: 7.5em 2em 7em 2em;
-    margin-top: 0.8em; */
-  } 
 
-  /* #contactMeDiv {
-    width: 15%;
-  }*/   
-
-  #contactTypes {
-    flex-direction: column;
-  } 
-
+/* MEDIA QUERY FOR SCREENS SMALL THAN 900px */
+@media screen and (max-width: 1100px) {
   .sectionTitles {
     width: 23%;
     font-size: 0.75em;
@@ -292,9 +259,48 @@ h3 {
   .projectNames img {
     max-width: 100%;
   } 
-
-} 
+  .contactLink {
+    font-size: 0.5em;
+  }
   
+  span {
+    margin-top: 3em;
+  }
+
+
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 1200px) {
+  .sectionTitles {
+    width: 23%;
+    font-size: 0.75em;
+  }
+
+  .panelCard {
+    width: 65%;
+  }
+
+  .projectNames img {
+    max-width: 100%;
+  } 
+  .contactLink {
+    font-size: 0.5em;
+  }
+  
+  span {
+    margin-top: 3em;
+  }
+
+  #contactTypes {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+
+}
   
   
   
